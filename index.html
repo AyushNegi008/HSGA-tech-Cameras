@@ -4,8 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="path/to/pyscript.css" />
-	<script defer src="path/to/pyscript.js"></script>
+	
 
 	<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 	<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
@@ -13,16 +12,18 @@
 
 	<title>abc</title>
 </head>
+
+
+<py-env>
+- paths:
+ 	- /backend.py
+</py-env>
+
+
 <body>
 	<div id="pi" class="ab"></div>
 	
 
 </body>
-	<py-script>
-def(a):
-	a=1
-	returt(a)
-
-pyscript.write('pi',f'k is {a}')
-	</py-script>
+	<py-script src="backend.py"></py-script>
 </html>
